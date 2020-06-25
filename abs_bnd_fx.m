@@ -130,7 +130,7 @@ b0=[0.1 1];
 for k = 1:M
 
     i = find(isnan(cp_stand(k,ifit)) == 0);
-    [B,FVAL,flag(k,1)] = fminsearch(@least_squares_AD,b0,opts,squeeze(cp_stand(k,ifit(i))),WL(ifit(i)));
+    [B,FVAL,flag(k,1)] = fminsearch(@least_squares_AD,b0,opts,cp_stand(k,ifit(i)),WL(ifit(i)));
     cpr(k,:) = cp_stand(k,:) - ( B(1)*(532./WL).^B(2) );
     
     if flag(k,1) == 0
