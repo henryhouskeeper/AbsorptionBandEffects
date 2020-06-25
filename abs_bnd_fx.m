@@ -93,7 +93,6 @@ WL = [399.1	403.7	408.2	412.5	416.9	421.7	426.9	431.5	435.7...
     606.5   611.2	616.0	620.7	625.2	629.7	634.2	638.7	643.3...
     647.8   652.7	657.3	661.9	666.5	670.9	675.7	679.9	684.2...
     688.4   692.3	696.5	700.2	704.1	707.9	711.5	715.2	718.9];
-%nWL = length(WL); %nwl = length(wl);
 
 [mwl,nwl] = size(wl);
 if mwl > nwl
@@ -115,11 +114,10 @@ cpr = NaN(M,N);
 flag = NaN(M,1);
 alh = NaN(M,1);
 
-% Remove power law function
 ifit = find( (WL >= 500 & WL <= 640) | (WL >=710 & WL <= 720));
 isub = find( WL >= 647.8 & WL <= 700.2 );
 
-% %setting options for fmisearch
+% % setting options for fminsearch
 opts = optimset('fminsearch');      
 opts = optimset(opts,'MaxIter',4000); 
 opts = optimset(opts,'MaxFunEvals',2000);
