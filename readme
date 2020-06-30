@@ -2,3 +2,4 @@ This beta version code has been provided to help advance research on absorption 
 The code provided here was modeled using a subsampled portion of cp derived using a WetLabs ac-s during the Tara Oceans Expedition, and has not been evaluated on additional datasets.
 Citation of the Applied Optics manuscript for which this code was produced would be greatly appreciated, as is feedback regarding suggested improvements or documenting the performance of this code with another relevant dataset.
 Feedback may be posted to this github repository or directed to: hhouskee@ucsc.edu
+Appropriate citation is: Houskeeper, HF., Draper, D., Kudela, RM., and Boss, E. (2020) Chlorophyll absorption and phytoplankton size information inferred from hyperspectral particulate beam-attenuation. Accepted, Applied Optics.
